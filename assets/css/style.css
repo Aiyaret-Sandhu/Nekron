@@ -157,6 +157,10 @@ body.nav-active { overflow: hidden; }
   gap: 12px;
 }
 
+.active .social-list {
+  margin-bottom: 5rem;
+}
+
 .social-link {
   font-size: 2rem;
   transition: var(--transition-1);
@@ -717,6 +721,10 @@ textarea.input-field {
     all: unset;
     display: flex;
     flex-grow: 1;
+
+    /* padding-bottom: 5rem
+    
+    ; */
   }
 
   .navbar-list {
