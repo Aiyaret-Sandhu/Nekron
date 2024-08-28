@@ -74,7 +74,7 @@ For more details on contributing, please refer to our [CONTRIBUTING.md](CONTRIBU
 
 For any questions or support, please reach out to:
 
-- **Aiyaret Sandhu**  
+- **Arshdeep Singh Sandhu**  
 - **Email:** arshsandhuprofessional@gmail.com 
 
 ---
