@@ -1391,7 +1391,7 @@ textarea.input-field {
   gap: 0.11rem;
   height: 100%;
   width: 80%;
-  gap: 0.51rem;
+  gap: 0.6rem;
   width: 80rem;
   height: 70rem;
   
@@ -1401,9 +1401,9 @@ textarea.input-field {
 
 
 .trendinganime .serie-grid-cont div {
-  background-color: green;
+  /* background-color: green; */
   transition: all 0.5s ease-in-out;
-  border-radius: 0.15rem;
+  border-radius: 0.5rem;
 
 }
 
@@ -1412,7 +1412,7 @@ textarea.input-field {
   height: 100%;
   object-fit: cover;
   /* object-position: center; */
-  border-radius: 0.15rem;
+  border-radius: 0.35rem;
 }
 
 .trendinganime .serie-grid-cont div:hover {
