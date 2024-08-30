@@ -158,7 +158,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .active .social-list {
-  margin-bottom: 5rem;
+  /* margin-top: 0.1rem; */
 }
 
 .social-link {
