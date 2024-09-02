@@ -483,7 +483,7 @@ body.nav-active { overflow: hidden; }
 
 .input-field {
   background-color: white;
-  color: white;
+  color: black;
   font-size: var(--fs-7);
   padding: 14px 18px;
   border-radius: var(--radius-6);
