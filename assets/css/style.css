@@ -317,11 +317,22 @@ body.nav-active { overflow: hidden; }
 
 .hero {
   padding-block-start: calc(var(--section-padding) + 50px);
-  background: url(./../images/bg.jpg) no-repeat;
+  /* background: url(./../images/bg.jpg) no-repeat; */
   background-size: cover;
   background-position: center;
   padding-bottom: 17rem;
   /* padding-top: 15rem; */
+
+  background-image: url("./../images/bg.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 } 
 
 .hero .container {
@@ -993,7 +1004,7 @@ textarea.input-field {
   vertical-align: middle;
   /* margin-bottom: 2rem; */
   /* margin-left: 12vh; */
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-color: red;
 }
 
@@ -1479,5 +1490,24 @@ textarea.input-field {
   }
 
 
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1694903062502-6df8204136af?q=80&w=1954&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  background-image: url("https://images.unsplash.com/photo-1513180978247-f4bb79c6460a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
