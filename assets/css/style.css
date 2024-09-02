@@ -155,7 +155,7 @@ body.nav-active { overflow: hidden; }
   max-width: max-content;
   padding: 12px 28px;
   border-radius: 0.5rem;
-  transition: var(--transition-1);
+  transition: all 0.5s;
   will-change: transform;
 }
 
@@ -165,7 +165,7 @@ body.nav-active { overflow: hidden; }
 .btn-secondary:is(:hover, :focus-visible) {
   background-color: rgb(2, 185, 2);
   border: none;
-  color: var(--white);
+  color: white;
 }
 
 .section-text { font-size: 1.6rem; }
@@ -491,7 +491,6 @@ body.nav-active { overflow: hidden; }
   margin-block-end: 20px;
 }
 
-.input-field::placeholder { color: var(--manatee); }
 
 textarea.input-field {
   min-height: 120px;
