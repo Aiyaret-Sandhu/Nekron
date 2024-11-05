@@ -1,1100 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nekron</title>
 
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/titlogo.png"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nekron</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/titlogo.png" type="image/x-icon" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- 
     - #HEADER
   -->
 
-    <header class="header" data-header>
-      <div class="container">
-        <a href="#" class="logo">
-          <img
-            src="./assets/images/logo.png"
-            width="174"
-            height="24"
-            alt="Nekron home"
-          />
-        </a>
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="174" height="24" alt="Nekron home" />
+      </a>
 
-        <nav class="navbar" data-navbar>
-          <div class="navbar-top">
-            <a href="#" class="logo">
-              <img
-                src="./assets/images/logo.png"
-                width="144"
-                height="24"
-                alt="Nekron home"
-              />
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="144" height="24" alt="Nekron home" />
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a target="_blank" href="https://nekron-music.vercel.app/" class="navbar-link">Music</a>
+          </li>
+
+          <li>
+            <a target="_blank" href="https://zangetsu.vercel.app/" class="navbar-link">Anime</a>
+          </li>
+
+          <li>
+            <a target="_blank" href="https://isekai-manga.vercel.app/" class="navbar-link">Manga</a>
+          </li>
+
+          <li>
+            <a target="_blank" href="https://movies-watch-rho.vercel.app/" class="navbar-link">Movies & Series
             </a>
+          </li>
 
-            <button
-              class="nav-close-btn"
-              aria-label="close menu"
-              data-nav-toggler
-            >
-              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-            </button>
-          </div>
+          <li>
+            <a href="#CONTACT" class="navbar-link">About Us</a>
+          </li>
+        </ul>
 
-          <ul class="navbar-list">
-            <li>
-              <a href="#" class="navbar-link">Home</a>
-            </li>
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">nekron.official@email.com</a>
 
-            <li>
-              <a
-                target="_blank"
-                href="https://nekron-music.vercel.app/"
-                class="navbar-link"
-                >Music</a
-              >
-            </li>
-
-            <li>
-              <a
-                target="_blank"
-                href="https://zangetsu.vercel.app/"
-                class="navbar-link"
-                >Anime</a
-              >
-            </li>
-
-            <li>
-              <a target="_blank" href="https://isekai-manga.vercel.app/" class="navbar-link">Manga</a>
-            </li>
-
-            <li>
-              <a
-                target="_blank"
-                href="https://movies-watch-rho.vercel.app/"
-                class="navbar-link"
-                >Movies & Series
-              </a>
-            </li>
-
-            <li>
-              <a href="#CONTACT" class="navbar-link">About Us</a>
-            </li>
-          </ul>
-
-          <div class="wrapper">
-            <a href="mailto:info@email.com" class="contact-link"
-              >nekron.official@email.com</a
-            >
-
-            <a href="tel:001234567890" class="contact-link">+91 6280479311</a>
-          </div>
-
-          <ul class="social-list">
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-dribbble"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-        </button>
-
-        <div class="overlay" data-nav-toggler data-overlay></div>
-      </div>
-    </header>
-
-    <main>
-      <article>
-        <!-- 
-        - #HERO
-      -->
-
-        <section class="section hero" aria-label="home">
-          <div class="container">
-            <!-- <figure class="hero-banner"> -->
-            <!-- <img src="./assets/images/hero-banner.jpg" width="560" height="540" alt="Nekron" class="w-100"
-              data-reveal="top"> -->
-
-            <!-- <video width="403" height="91" class="shape1" autoplay loop>
-                <source src="./assets/videos/WhatsApp Video 2024-08-17 at 12.26.43.mp4" type="video/mp4">
-              </video> -->
-            <div class="hero-content">
-              <p
-                class="h1 hero-title"
-                data-reveal="top"
-                data-reveal-delay="0.5s"
-              >
-                <span
-                  style="
-                    color: rgb(15, 245, 15);
-                    font-size: 9rem;
-                    font-family: 'Ubuntu';
-                    font-weight: 600;
-                    text-shadow: -10px -10px 1px rgba(10, 249, 10, 0.2);
-                    margin-left: -1rem;
-                    margin-right: -1rem;
-                  "
-                >
-                  Listen & Watch,
-                </span>
-
-                <span style="color: rgb(226, 223, 223)">
-                  Whatever You Want !
-                </span>
-              </p>
-
-              <br />
-              <!-- <hr> -->
-              <br />
-
-              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-                <a
-                  target="_blank"
-                  href="https://movies-watch-rho.vercel.app/"
-                  class="btn btn-primary"
-                  >Watch Now</a
-                >
-
-                <a href="#CONTACT" class="btn btn-secondary">Contact Us</a>
-              </div>
-            </div>
-
-            <div class="banner-grid-cont">
-              <div
-                style="
-                  grid-column-start: 1;
-                  grid-column-end: 2;
-                  grid-row-start: 1;
-                  grid-row-end: 9;
-                  border-radius: 0.5rem;
-                "
-              >
-                <img
-                  src="./assets/images/banner-img_01.jpg"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: right;
-                    border-radius: 0.5rem;
-                  "
-                />
-              </div>
-              <div
-                style="
-                  grid-column-start: 2;
-                  grid-column-end: 5;
-                  grid-row-start: 1;
-                  grid-row-end: 3;
-                "
-              >
-                <img
-                  src="./assets/images/banner-img_04.jpg"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: right;
-                    border-radius: 0.5rem;
-                  "
-                />
-              </div>
-              <div
-                style="
-                  grid-column-start: 2;
-                  grid-column-end: 5;
-                  grid-row-start: 3;
-                  grid-row-end: 9;
-                "
-              >
-                <img
-                  src="./assets/images/banner-img_03.jpg"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: right;
-                    border-radius: 0.5rem;
-                  "
-                />
-              </div>
-              <div
-                style="
-                  grid-column-start: 5;
-                  grid-column-end: 8;
-                  grid-row-start: 1;
-                  grid-row-end: 6;
-                "
-              >
-                <img
-                  src="./assets/images/banner-img_02.jpg"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 0.5rem;
-                  "
-                />
-              </div>
-              <div
-                style="
-                  grid-column-start: 5;
-                  grid-column-end: 8;
-                  grid-row-start: 6;
-                  grid-row-end: 9;
-                "
-              >
-                <img
-                  src="./assets/images/banner-img-05.webp"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: right;
-                    border-radius: 0.5rem;
-                  "
-                />
-              </div>
-            </div>
-
-            <!-- <video width="100%" height="100%" autoplay loop
-              
-                style="border-radius: 0.5rem;"
-              >
-                <source src="./assets/videos/backquan.mp4" type="video/mp4"
-                >
-                Your browser does not support the video tag.
-              </video> -->
-
-            <!-- <video width="40%" height="50%" class="shape" autoplay loop>
-                <source src="./assets/videos/WhatsApp Video 2024-08-17 at 12.26.36.mp4" type="video/mp4">
-              </video> -->
-
-            <!-- <div class="video-container">
-              
-            </div> -->
-
-            <!-- <img src="./assets/images/hero-shape.svg" width="203" height="91" alt="250+ Projects Done" class="shape"
-              data-reveal="top" data-reveal-delay="0.25s"> -->
-            <!-- </figure> -->
-          </div>
-        </section>
-
-        <section id="MOVIE" class="topmovieslider">
-          <div
-            class="cattitle"
-            style="
-              text-align: center;
-              align-items: center;
-              justify-content: center;
-              gap: 2rem;
-            "
-          >
-            <div class="head">
-              <span>Trending</span>
-              Movies
-            </div>
-
-            <a target="_blank" href="https://movies-watch-rho.vercel.app/"
-              ><div class="watchnow">Watch Now</div></a
-            >
-          </div>
-
-          <div class="slider-container">
-            <div class="slider" id="slider">
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"
-                  alt="Mad Max: Fury Road"
-                />
-                <div>
-                  <div class="title">Mad Max: Fury Road</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2015 . 2hr 1min</div>
-                      <div class="type">R</div>
-                    </div>
-                    <div class="category">Action . Adventure</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BODQ0NDhjYWItYTMxZi00NTk2LWIzNDEtOWZiYWYxZjc2MTgxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
-                  alt="Jumanji: Welcome to the Jungle"
-                />
-                <div>
-                  <div class="title">Jumanji</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2017 . 1hr 59min</div>
-                      <div class="type">PG-13</div>
-                    </div>
-                    <div class="category">Action . Adventure . Comedy</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BNDIzMTk4NDYtMjg5OS00ZGI0LWJhZDYtMzdmZGY1YWU5ZGNkXkEyXkFqcGdeQXVyMTI5NzUyMTIz._V1_FMjpg_UX1000_.jpg"
-                  alt="Guardians of the Galaxy"
-                />
-                <div>
-                  <div class="title">Guardians of the Galaxy</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2014 . 2hr 1min</div>
-                      <div class="type">PG-13</div>
-                    </div>
-                    <div class="category">Action . Adventure . Comedy</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BODY2MTAzOTQ4M15BMl5BanBnXkFtZTgwNzg5MTE0MjI@._V1_.jpg"
-                  alt="Spider-Man: Homecoming"
-                />
-                <div>
-                  <div class="title">Spider-Man: Homecoming</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2017 . 2hr 13min</div>
-                      <div class="type">PG-13</div>
-                    </div>
-                    <div class="category">Action . Adventure</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BODZhNzlmOGItMWUyYS00Y2Q5LWFlNzMtM2I2NDFkM2ZkYmE1XkEyXkFqcGdeQXVyMTU5OTA4NTIz._V1_FMjpg_UX1000_.jpg"
-                  alt="Ant-Man"
-                />
-                <div>
-                  <div class="title">Ant-Man</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2015 . 1hr 57min</div>
-                      <div class="type">PG-13</div>
-                    </div>
-                    <div class="category">Action . Adventure . Comedy</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BNzIxMjYwNDEwN15BMl5BanBnXkFtZTgwMzk5MDI3NTM@._V1_FMjpg_UX1000_.jpg"
-                  alt="Jurassic World"
-                />
-                <div>
-                  <div class="title">Jurassic World</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2015 . 2hr 4min</div>
-                      <div class="type">PG-13</div>
-                    </div>
-                    <div class="category">Action . Adventure . Sci-Fi</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BZGUyMjYzMTktOGNhOC00ZTllLTgzYWEtZDU3OTc3YWIyZDU2XkEyXkFqcGdeQXVyOTg3NjI1MTg@._V1_.jpg"
-                  alt="Slide 1"
-                />
-                <div>
-                  <div class="title">The Free Guy</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2023 . 2hr 25min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Action . Adventure</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://i.pinimg.com/originals/61/8e/44/618e4481183d9d09e7d5d812fad60ee0.jpg"
-                  alt="Slide 2"
-                />
-                <div>
-                  <div class="title">John Wick 2</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2023 . 2hr 45min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Action . Thriller</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/I/811zK52uoaL.jpg"
-                  alt="Slide 3"
-                />
-                <div>
-                  <div class="title">The Conjuring 2</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2023 . 1hr 53min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Horror . Adventure</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://www.tallengestore.com/cdn/shop/products/1917_-_Sam_Mendes_-_Hollywood_War_Film_Classic_English_Movie_Poster_a12704bd-2b25-4aa7-8c8d-8f40cf467dc7.jpg?v=1582781089"
-                  alt="Slide 4"
-                />
-                <div>
-                  <div class="title">1917</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2024 . 1hr 50min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Action . Adventure</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://www.detroitnews.com/gcdn/presto/2019/08/26/PDTN/99b81905-2fc8-4406-b884-bbc52ff18e3e-rise-of-skywalker-poster-d23.jpg?crop=674,899,x1,y55"
-                  alt="Slide 5"
-                />
-                <div>
-                  <div class="title">Rise of Skywalker</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2023 . 2hr 55min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Action . Sci-Fi</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/I/61t9ehVKeUL._AC_UF1000,1000_QL80_.jpg"
-                  alt="Slide 6"
-                />
-                <div>
-                  <div class="title">Prometheus</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2020 . 2hr 25min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Sci-Fi . Horror</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcSx0eqHw7ZGjtVQA7NUjPQWvaRO7QWAtPtw&s"
-                  alt="Slide 7"
-                />
-                <div>
-                  <div class="title">A Quiet Place</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2023 . 1hr 57min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Action . Horror</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BMTg4OTE1ODE2MV5BMl5BanBnXkFtZTgwMDY5MTE4NjM@._V1_.jpg"
-                  alt="Slide 8"
-                />
-                <div>
-                  <div class="title">What Men Want</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2020 . 1hr 35min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Comedy . Family</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BOTMyMjEyNzIzMV5BMl5BanBnXkFtZTgwNzIyNjU0NzE@._V1_.jpg"
-                  alt="Slide 9"
-                />
-                <div>
-                  <div class="title">Zootopia</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2023 . 2hr 5min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Family . Comedy</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BMTkxMDAxNDUyNV5BMl5BanBnXkFtZTgwOTc3MzcxMjI@._V1_.jpg"
-                  alt="Slide 10"
-                />
-                <div>
-                  <div class="title">Valerian</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2023 . 2hr 50min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Action . Sci-Fi</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/I/71DwIcSgFcS.jpg"
-                  alt="Slide 11"
-                />
-                <div>
-                  <div class="title">Inception</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2023 . 1hr 45min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Action . Thriller</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://i.pinimg.com/originals/34/46/96/344696dffda98c00ca9daff9ea1855be.jpg"
-                  alt="Slide 12"
-                />
-                <div>
-                  <div class="title">Tsunami</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2023 . 2hr 25min</div>
-                      <div class="type">TV - MA</div>
-                    </div>
-                    <div class="category">Action . Thriller</div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BYmMxZWRiMTgtZjM0Ny00NDQxLWIxYWQtZDdlNDNkOTEzYTdlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
-                  alt="Thor: Ragnarok"
-                />
-                <div>
-                  <div class="title">Thor: Love & Thunder</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2017 . 2hr 10min</div>
-                      <div class="type">PG-13</div>
-                    </div>
-                    <div class="category">Action . Adventure . Comedy</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BYTlhNzJjYzYtNGU3My00ZDI5LTgzZDUtYzllYjU1ZmU0YTgwXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg"
-                  alt="Wonder Woman"
-                />
-                <div>
-                  <div class="title">Wonder Woman</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2017 . 2hr 21min</div>
-                      <div class="type">PG-13</div>
-                    </div>
-                    <div class="category">Action . Adventure . Fantasy</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BYzE5MjY1ZDgtMTkyNC00MTMyLThhMjAtZGI5OTE1NzFlZGJjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
-                  alt="Deadpool"
-                />
-                <div>
-                  <div class="title">Deadpool</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2016 . 1hr 48min</div>
-                      <div class="type">R</div>
-                    </div>
-                    <div class="category">Action . Adventure . Comedy</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BZjdmYWQ5NDMtYWQyMi00MWYyLWE3M2YtZDc5ODZlOGQ4OWQyXkEyXkFqcGdeQXVyMTYwMDIyNzk1._V1_.jpg"
-                  alt="Kingsman: The Secret Service"
-                />
-                <div>
-                  <div class="title">Kingsman: The Secret Service</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2014 . 2hr 9min</div>
-                      <div class="type">R</div>
-                    </div>
-                    <div class="category">Action . Adventure . Comedy</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="https://m.media-amazon.com/images/M/MV5BMTY3MTI5NjQ4Nl5BMl5BanBnXkFtZTcwOTU1OTU0OQ@@._V1_.jpg"
-                  alt="Pacific Rim"
-                />
-                <div>
-                  <div class="title">Pacific Rim</div>
-                  <div class="info">
-                    <div class="timeandyear">
-                      <div class="yt">2013 . 2hr 11min</div>
-                      <div class="type">PG-13</div>
-                    </div>
-                    <div class="category">Action . Adventure . Sci-Fi</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="parallax"></div>
-
-        <section id="SERIES" class="popularseries">
-          <div class="cattitle">
-            <div class="head">
-              <span>Popular</span>
-              Series
-            </div>
-          </div>
-
-          <div class="serie-grid-cont">
-            <div class="contgrid-1">
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
-              />
-            </div>
-            <div class="contgrid-2">
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BMGUyOTFkMzUtOTQ5ZC00YjMzLWIyMGMtOWU2M2VkMDMxZTRjXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_QL75_UX820_.jpg"
-              />
-            </div>
-            <div class="contgrid-3">
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BYTZmNTg3ZWYtZTQ1ZC00OTliLWFlNjQtODk1YzQ4NGI5ZmNlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg"
-              />
-            </div>
-            <div class="contgrid-4">
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BNjE3ZjIxZTUtYzE0ZC00M2ZiLWE0MjAtZDViZGMyNjE5NjVkXkEyXkFqcGdeQXVyMjU5NDU0Mjc@._V1_FMjpg_UX1000_.jpg"
-              />
-            </div>
-            <div class="contgrid-5">
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BYWFjYmMxMjMtMGE2ZC00YWZhLTgzNDYtYTA3ODA2MDg2NTA4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-              />
-            </div>
-            <div class="contgrid-6">
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BY2ZiODA2MGYtMmMxMi00YjlmLWFmYjktMWYyOTMwNWFkNWNkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg"
-              />
-            </div>
-            <div class="contgrid-7">
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BNWNjMmQ4MzgtOWY2Ny00MTRhLWI3MmYtOWQ1NWJhMjk4MjQyXkEyXkFqcGdeQXVyNjI4NDY5ODM@._V1_.jpg"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section id="MUSIC" class="topmusicslider topmovieslider">
-          <div class="cattitle" style="margin-bottom: 2rem">
-            <div class="head">
-              <span> Popular </span>
-              Songs
-            </div>
-
-            <a target="_blank" href="https://nekron-music.vercel.app/"
-              ><div class="watchnow">Listen Now</div></a
-            >
-          </div>
-
-          <div class="mslider-container">
-            <div class="mslider" id="mslider">
-              <div class="mslide">
-                <img
-                  src="https://c.saavncdn.com/220/Romance-English-2019-20191206160920-500x500.jpg"
-                  alt="Slide 1"
-                />
-
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">Shameless</div>
-                    <div class="singer">Camila Cabello</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-
-              <div class="mslide">
-                <img
-                  src="https://i.pinimg.com/736x/d3/9f/75/d39f75e659bef007b5cbebf7e478ae89.jpg"
-                  alt="Slide 2"
-                />
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">Still with You</div>
-                    <div class="singer">Jungkook</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-              <div class="mslide">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFn7M2bhViAoSOyXo8_oLrH1c68WFX17vmxQ&s"
-                  alt="Slide 3"
-                />
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">Shinunoga e-Wa</div>
-                    <div class="singer">Fuji Kaze</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-              <div class="mslide">
-                <img
-                  src="https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-v-2102/0b224ad437c14b57a80b6a0957968266~c5_500x500.image"
-                  alt="Slide 4"
-                />
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">I Wanna be Yours</div>
-                    <div class="singer">Arctic Monkeys</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-              <div class="mslide">
-                <img
-                  src="https://i.pinimg.com/736x/90/bb/99/90bb9924e4441341236197d4f9bb74b2.jpg"
-                  alt="Slide 5"
-                />
-
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">Escapism</div>
-                    <div class="singer">RAYE, 070 Shake</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-              <div class="mslide">
-                <img
-                  src="https://m.media-amazon.com/images/I/51SWWcgmtoS._AC_UF1000,1000_QL80_.jpg"
-                  alt="Slide 6"
-                />
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">Don't Blame Me</div>
-                    <div class="singer">Taylor Swift</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-              <div class="mslide">
-                <img
-                  src="https://i1.sndcdn.com/artworks-OyCIs78v7RZ2JCUM-cwiLyQ-t500x500.jpg"
-                  alt="Slide 7"
-                />
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">Night Flower</div>
-                    <div class="singer">Ahn Ye Eun</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-              <div class="mslide">
-                <img
-                  src="https://lastfm.freetls.fastly.net/i/u/500x500/7b502419c192b3df0ac14eedc74be923.jpg"
-                  alt="Slide 8"
-                />
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">CROW</div>
-                    <div class="singer">UPIKO</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-              <div class="mslide">
-                <img
-                  src="https://i.scdn.co/image/ab67616d0000b273ac122efb1600b27d7d7f1775"
-                  alt="Slide 9"
-                />
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">Vengeance</div>
-                    <div class="singer">BIBI</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-              <div class="mslide">
-                <img
-                  src="https://a.storyblok.com/f/178900/1658x933/4818ad7c7d/the-parade-of-battlers-otoha.png/m/1200x0/filters:quality(95)format(webp)"
-                  alt="Slide 10"
-                />
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">The Parade of Battlers</div>
-                    <div class="singer">otoha</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-              <div class="mslide">
-                <img
-                  src="https://us-tuna-sounds-images.voicemod.net/291fb8d6-fda6-482e-8b5c-be455f4a3679-1714310470908.jpg"
-                  alt="Slide 11"
-                />
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">Let The World Burn</div>
-                    <div class="singer">Chris Grey</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-              <div class="mslide">
-                <img
-                  src="https://i.scdn.co/image/ab67616d00001e025bdd9e580fdda5e676a25e6a"
-                  alt="Slide 12"
-                />
-                <div class="info">
-                  <div class="info-top">
-                    <div class="title">Worth It</div>
-                    <div class="singer">Fifth Harmony</div>
-                  </div>
-
-                  <img src="./assets/images/play.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="parallax parallax1"></div>
-
-        <section id="ANIME" class="trendinganime">
-          <div class="cattitle">
-            <div class="head">
-              <span>Trending</span>
-              Anime
-            </div>
-          </div>
-
-          <div class="serie-grid-cont">
-            <div class="contgrid-1">
-              <img
-                src="https://mrwallpaper.com/images/hd/characters-of-your-lie-in-april-al0dcb8a5xwbgwqq.jpg"
-              />
-            </div>
-            <div class="contgrid-2">
-              <img
-                src="https://4kwallpapers.com/images/wallpapers/demon-slayer-1920x1080-10716.jpg"
-              />
-            </div>
-            <div class="contgrid-3">
-              <img
-                src="https://m.media-amazon.com/images/M/MV5BODFmYTUwYzMtM2M2My00NGExLWIzMDctYmRjNTNhZDc4MGI2XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UX1000_.jpg"
-              />
-            </div>
-            <div class="contgrid-4">
-              <img
-                src="https://images7.alphacoders.com/661/thumb-1920-661083.jpg"
-              />
-            </div>
-            <div class="contgrid-5">
-              <img
-                src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10701949_b_v8_ah.jpg"
-              />
-            </div>
-            <div class="contgrid-6">
-              <img
-                src="https://c4.wallpaperflare.com/wallpaper/109/220/12/dragon-ball-dragon-ball-super-ultra-instinct-son-goku-wallpaper-preview.jpg"
-              />
-            </div>
-          </div>
-
-          <a target="_blank" href="https://zangetsu.vercel.app/"
-            ><div class="watchnow">Watch Now</div></a
-          >
-        </section>
-
-        <!-- <div class="parallax parallax2"></div> -->
-
-        <!-- 
-        - #CONTACT
-      -->
-
-        <section id="CONTACT" class="section contact" aria-label="contact">
-          <div class="container">
-            <div class="contact-card">
-              <div class="contact-content" data-reveal="left">
-                <h2 class="h2 section-title">
-                  If you have some suggestions, Feel free to contact us!
-                </h2>
-              </div>
-
-              <form action="" class="contact-form" data-reveal="right">
-                <div class="input-wrapper">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Name *"
-                    required
-                    class="input-field"
-                  />
-
-                  <input
-                    type="email"
-                    name="email_address"
-                    placeholder="Email *"
-                    required
-                    class="input-field"
-                  />
-                </div>
-
-                <textarea
-                  name="message"
-                  placeholder="Message *"
-                  required
-                  class="input-field"
-                ></textarea>
-
-                <button type="submit" class="btn btn-secondary">
-                  Send message
-                </button>
-              </form>
-            </div>
-          </div>
-        </section>
-      </article>
-    </main>
-
-    <!-- 
-    - #FOOTER
-  -->
-
-    <footer class="footer">
-      <div style="display: flex; justify-content: center">
-        <iframe
-          style="border-radius: 0.5rem"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13749.02672471774!2d76.65282199999999!3d30.513780199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1724421446979!5m2!1sen!2sin"
-          width="80%"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-
-      <br />
-
-      <hr style="border-color: gray" />
-
-      <br />
-
-      <div class="container">
-        <div class="copyright" style="color: white">© 2024 Nekron</div>
+          <a href="tel:001234567890" class="contact-link">+91 6280479311</a>
+        </div>
 
         <ul class="social-list">
           <li>
@@ -1127,52 +107,761 @@
             </a>
           </li>
         </ul>
-      </div>
-    </footer>
+      </nav>
 
-<<<<<<< HEAD
-      
-      
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home">
+        <div class="container">
+          <!-- <figure class="hero-banner"> -->
+          <!-- <img src="./assets/images/hero-banner.jpg" width="560" height="540" alt="Nekron" class="w-100"
+              data-reveal="top"> -->
+
+          <!-- <video width="403" height="91" class="shape1" autoplay loop>
+                <source src="./assets/videos/WhatsApp Video 2024-08-17 at 12.26.43.mp4" type="video/mp4">
+              </video> -->
+          <div class="hero-content">
+            <p class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              <span style="
+                    color: rgb(15, 245, 15);
+                    font-size: 9rem;
+                    font-family: 'Ubuntu';
+                    font-weight: 600;
+                    text-shadow: -10px -10px 1px rgba(10, 249, 10, 0.2);
+                    margin-left: -1rem;
+                    margin-right: -1rem;
+                  ">
+                Listen & Watch,
+              </span>
+
+              <span style="color: rgb(226, 223, 223)">
+                Whatever You Want !
+              </span>
+            </p>
+
+            <br />
+            <!-- <hr> -->
+            <br />
+
+            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+              <a target="_blank" href="https://movies-watch-rho.vercel.app/" class="btn btn-primary">Watch Now</a>
+
+              <a href="#CONTACT" class="btn btn-secondary">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="banner-grid-cont">
+            <div style="
+                  grid-column-start: 1;
+                  grid-column-end: 2;
+                  grid-row-start: 1;
+                  grid-row-end: 9;
+                  border-radius: 0.5rem;
+                ">
+              <img src="./assets/images/banner-img_01.jpg" style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: right;
+                    border-radius: 0.5rem;
+                  " />
+            </div>
+            <div style="
+                  grid-column-start: 2;
+                  grid-column-end: 5;
+                  grid-row-start: 1;
+                  grid-row-end: 3;
+                ">
+              <img src="./assets/images/banner-img_04.jpg" style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: right;
+                    border-radius: 0.5rem;
+                  " />
+            </div>
+            <div style="
+                  grid-column-start: 2;
+                  grid-column-end: 5;
+                  grid-row-start: 3;
+                  grid-row-end: 9;
+                ">
+              <img src="./assets/images/banner-img_03.jpg" style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: right;
+                    border-radius: 0.5rem;
+                  " />
+            </div>
+            <div style="
+                  grid-column-start: 5;
+                  grid-column-end: 8;
+                  grid-row-start: 1;
+                  grid-row-end: 6;
+                ">
+              <img src="./assets/images/banner-img_02.jpg" style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 0.5rem;
+                  " />
+            </div>
+            <div style="
+                  grid-column-start: 5;
+                  grid-column-end: 8;
+                  grid-row-start: 6;
+                  grid-row-end: 9;
+                ">
+              <img src="./assets/images/banner-img-05.webp" style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: right;
+                    border-radius: 0.5rem;
+                  " />
+            </div>
+          </div>
+
+          <!-- <video width="100%" height="100%" autoplay loop
+              
+                style="border-radius: 0.5rem;"
+              >
+                <source src="./assets/videos/backquan.mp4" type="video/mp4"
+                >
+                Your browser does not support the video tag.
+              </video> -->
+
+          <!-- <video width="40%" height="50%" class="shape" autoplay loop>
+                <source src="./assets/videos/WhatsApp Video 2024-08-17 at 12.26.36.mp4" type="video/mp4">
+              </video> -->
+
+          <!-- <div class="video-container">
+              
+            </div> -->
+
+          <!-- <img src="./assets/images/hero-shape.svg" width="203" height="91" alt="250+ Projects Done" class="shape"
+              data-reveal="top" data-reveal-delay="0.25s"> -->
+          <!-- </figure> -->
+        </div>
+      </section>
+
+      <section id="MOVIE" class="topmovieslider">
+        <div class="cattitle" style="
+              text-align: center;
+              align-items: center;
+              justify-content: center;
+              gap: 2rem;
+            ">
+          <div class="head">
+            <span>Trending</span>
+            Movies
+          </div>
+
+          <a target="_blank" href="https://movies-watch-rho.vercel.app/">
+            <div class="watchnow">Watch Now</div>
+          </a>
+        </div>
+
+        <div class="slider-container">
+          <div class="slider" id="slider">
+            <div class="slide">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"
+                alt="Mad Max: Fury Road" />
+              <div>
+                <div class="title">Mad Max: Fury Road</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2015 . 2hr 1min</div>
+                    <div class="type">R</div>
+                  </div>
+                  <div class="category">Action . Adventure</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BODQ0NDhjYWItYTMxZi00NTk2LWIzNDEtOWZiYWYxZjc2MTgxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+                alt="Jumanji: Welcome to the Jungle" />
+              <div>
+                <div class="title">Jumanji</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2017 . 1hr 59min</div>
+                    <div class="type">PG-13</div>
+                  </div>
+                  <div class="category">Action . Adventure . Comedy</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNDIzMTk4NDYtMjg5OS00ZGI0LWJhZDYtMzdmZGY1YWU5ZGNkXkEyXkFqcGdeQXVyMTI5NzUyMTIz._V1_FMjpg_UX1000_.jpg"
+                alt="Guardians of the Galaxy" />
+              <div>
+                <div class="title">Guardians of the Galaxy</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2014 . 2hr 1min</div>
+                    <div class="type">PG-13</div>
+                  </div>
+                  <div class="category">Action . Adventure . Comedy</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="https://m.media-amazon.com/images/M/MV5BODY2MTAzOTQ4M15BMl5BanBnXkFtZTgwNzg5MTE0MjI@._V1_.jpg"
+                alt="Spider-Man: Homecoming" />
+              <div>
+                <div class="title">Spider-Man: Homecoming</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2017 . 2hr 13min</div>
+                    <div class="type">PG-13</div>
+                  </div>
+                  <div class="category">Action . Adventure</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BODZhNzlmOGItMWUyYS00Y2Q5LWFlNzMtM2I2NDFkM2ZkYmE1XkEyXkFqcGdeQXVyMTU5OTA4NTIz._V1_FMjpg_UX1000_.jpg"
+                alt="Ant-Man" />
+              <div>
+                <div class="title">Ant-Man</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2015 . 1hr 57min</div>
+                    <div class="type">PG-13</div>
+                  </div>
+                  <div class="category">Action . Adventure . Comedy</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNzIxMjYwNDEwN15BMl5BanBnXkFtZTgwMzk5MDI3NTM@._V1_FMjpg_UX1000_.jpg"
+                alt="Jurassic World" />
+              <div>
+                <div class="title">Jurassic World</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2015 . 2hr 4min</div>
+                    <div class="type">PG-13</div>
+                  </div>
+                  <div class="category">Action . Adventure . Sci-Fi</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZGUyMjYzMTktOGNhOC00ZTllLTgzYWEtZDU3OTc3YWIyZDU2XkEyXkFqcGdeQXVyOTg3NjI1MTg@._V1_.jpg"
+                alt="Slide 1" />
+              <div>
+                <div class="title">The Free Guy</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2023 . 2hr 25min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Action . Adventure</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://i.pinimg.com/originals/61/8e/44/618e4481183d9d09e7d5d812fad60ee0.jpg" alt="Slide 2" />
+              <div>
+                <div class="title">John Wick 2</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2023 . 2hr 45min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Action . Thriller</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://m.media-amazon.com/images/I/811zK52uoaL.jpg" alt="Slide 3" />
+              <div>
+                <div class="title">The Conjuring 2</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2023 . 1hr 53min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Horror . Adventure</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://www.tallengestore.com/cdn/shop/products/1917_-_Sam_Mendes_-_Hollywood_War_Film_Classic_English_Movie_Poster_a12704bd-2b25-4aa7-8c8d-8f40cf467dc7.jpg?v=1582781089"
+                alt="Slide 4" />
+              <div>
+                <div class="title">1917</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2024 . 1hr 50min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Action . Adventure</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://www.detroitnews.com/gcdn/presto/2019/08/26/PDTN/99b81905-2fc8-4406-b884-bbc52ff18e3e-rise-of-skywalker-poster-d23.jpg?crop=674,899,x1,y55"
+                alt="Slide 5" />
+              <div>
+                <div class="title">Rise of Skywalker</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2023 . 2hr 55min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Action . Sci-Fi</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://m.media-amazon.com/images/I/61t9ehVKeUL._AC_UF1000,1000_QL80_.jpg" alt="Slide 6" />
+              <div>
+                <div class="title">Prometheus</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2020 . 2hr 25min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Sci-Fi . Horror</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcSx0eqHw7ZGjtVQA7NUjPQWvaRO7QWAtPtw&s"
+                alt="Slide 7" />
+              <div>
+                <div class="title">A Quiet Place</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2023 . 1hr 57min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Action . Horror</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTg4OTE1ODE2MV5BMl5BanBnXkFtZTgwMDY5MTE4NjM@._V1_.jpg"
+                alt="Slide 8" />
+              <div>
+                <div class="title">What Men Want</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2020 . 1hr 35min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Comedy . Family</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://m.media-amazon.com/images/M/MV5BOTMyMjEyNzIzMV5BMl5BanBnXkFtZTgwNzIyNjU0NzE@._V1_.jpg"
+                alt="Slide 9" />
+              <div>
+                <div class="title">Zootopia</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2023 . 2hr 5min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Family . Comedy</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTkxMDAxNDUyNV5BMl5BanBnXkFtZTgwOTc3MzcxMjI@._V1_.jpg"
+                alt="Slide 10" />
+              <div>
+                <div class="title">Valerian</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2023 . 2hr 50min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Action . Sci-Fi</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://m.media-amazon.com/images/I/71DwIcSgFcS.jpg" alt="Slide 11" />
+              <div>
+                <div class="title">Inception</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2023 . 1hr 45min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Action . Thriller</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://i.pinimg.com/originals/34/46/96/344696dffda98c00ca9daff9ea1855be.jpg" alt="Slide 12" />
+              <div>
+                <div class="title">Tsunami</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2023 . 2hr 25min</div>
+                    <div class="type">TV - MA</div>
+                  </div>
+                  <div class="category">Action . Thriller</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYmMxZWRiMTgtZjM0Ny00NDQxLWIxYWQtZDdlNDNkOTEzYTdlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+                alt="Thor: Ragnarok" />
+              <div>
+                <div class="title">Thor: Love & Thunder</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2017 . 2hr 10min</div>
+                    <div class="type">PG-13</div>
+                  </div>
+                  <div class="category">Action . Adventure . Comedy</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYTlhNzJjYzYtNGU3My00ZDI5LTgzZDUtYzllYjU1ZmU0YTgwXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg"
+                alt="Wonder Woman" />
+              <div>
+                <div class="title">Wonder Woman</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2017 . 2hr 21min</div>
+                    <div class="type">PG-13</div>
+                  </div>
+                  <div class="category">Action . Adventure . Fantasy</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYzE5MjY1ZDgtMTkyNC00MTMyLThhMjAtZGI5OTE1NzFlZGJjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+                alt="Deadpool" />
+              <div>
+                <div class="title">Deadpool</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2016 . 1hr 48min</div>
+                    <div class="type">R</div>
+                  </div>
+                  <div class="category">Action . Adventure . Comedy</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZjdmYWQ5NDMtYWQyMi00MWYyLWE3M2YtZDc5ODZlOGQ4OWQyXkEyXkFqcGdeQXVyMTYwMDIyNzk1._V1_.jpg"
+                alt="Kingsman: The Secret Service" />
+              <div>
+                <div class="title">Kingsman: The Secret Service</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2014 . 2hr 9min</div>
+                    <div class="type">R</div>
+                  </div>
+                  <div class="category">Action . Adventure . Comedy</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTY3MTI5NjQ4Nl5BMl5BanBnXkFtZTcwOTU1OTU0OQ@@._V1_.jpg"
+                alt="Pacific Rim" />
+              <div>
+                <div class="title">Pacific Rim</div>
+                <div class="info">
+                  <div class="timeandyear">
+                    <div class="yt">2013 . 2hr 11min</div>
+                    <div class="type">PG-13</div>
+                  </div>
+                  <div class="category">Action . Adventure . Sci-Fi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="parallax"></div>
+
+      <section id="SERIES" class="popularseries">
+        <div class="cattitle">
+          <div class="head">
+            <span>Popular</span>
+            Series
+          </div>
+        </div>
+
+        <div class="serie-grid-cont">
+          <div class="contgrid-1">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" />
+          </div>
+          <div class="contgrid-2">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMGUyOTFkMzUtOTQ5ZC00YjMzLWIyMGMtOWU2M2VkMDMxZTRjXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_QL75_UX820_.jpg" />
+          </div>
+          <div class="contgrid-3">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BYTZmNTg3ZWYtZTQ1ZC00OTliLWFlNjQtODk1YzQ4NGI5ZmNlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" />
+          </div>
+          <div class="contgrid-4">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BNjE3ZjIxZTUtYzE0ZC00M2ZiLWE0MjAtZDViZGMyNjE5NjVkXkEyXkFqcGdeQXVyMjU5NDU0Mjc@._V1_FMjpg_UX1000_.jpg" />
+          </div>
+          <div class="contgrid-5">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BYWFjYmMxMjMtMGE2ZC00YWZhLTgzNDYtYTA3ODA2MDg2NTA4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" />
+          </div>
+          <div class="contgrid-6">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BY2ZiODA2MGYtMmMxMi00YjlmLWFmYjktMWYyOTMwNWFkNWNkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg" />
+          </div>
+          <div class="contgrid-7">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BNWNjMmQ4MzgtOWY2Ny00MTRhLWI3MmYtOWQ1NWJhMjk4MjQyXkEyXkFqcGdeQXVyNjI4NDY5ODM@._V1_.jpg" />
+          </div>
+        </div>
+      </section>
+
+      <section id="MUSIC" class="topmusicslider topmovieslider">
+        <div class="cattitle" style="margin-bottom: 2rem">
+          <div class="head">
+            <span> Popular </span>
+            Songs
+          </div>
+
+          <a target="_blank" href="https://nekron-music.vercel.app/">
+            <div class="watchnow">Listen Now</div>
+          </a>
+        </div>
+
+        <div class="mslider-container">
+          <div class="mslider" id="mslider">
+            <div class="mslide">
+              <img src="https://c.saavncdn.com/220/Romance-English-2019-20191206160920-500x500.jpg" alt="Slide 1" />
+
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">Shameless</div>
+                  <div class="singer">Camila Cabello</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+
+            <div class="mslide">
+              <img src="https://i.pinimg.com/736x/d3/9f/75/d39f75e659bef007b5cbebf7e478ae89.jpg" alt="Slide 2" />
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">Still with You</div>
+                  <div class="singer">Jungkook</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+            <div class="mslide">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFn7M2bhViAoSOyXo8_oLrH1c68WFX17vmxQ&s"
+                alt="Slide 3" />
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">Shinunoga e-Wa</div>
+                  <div class="singer">Fuji Kaze</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+            <div class="mslide">
+              <img
+                src="https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-v-2102/0b224ad437c14b57a80b6a0957968266~c5_500x500.image"
+                alt="Slide 4" />
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">I Wanna be Yours</div>
+                  <div class="singer">Arctic Monkeys</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+            <div class="mslide">
+              <img src="https://i.pinimg.com/736x/90/bb/99/90bb9924e4441341236197d4f9bb74b2.jpg" alt="Slide 5" />
+
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">Escapism</div>
+                  <div class="singer">RAYE, 070 Shake</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+            <div class="mslide">
+              <img src="https://m.media-amazon.com/images/I/51SWWcgmtoS._AC_UF1000,1000_QL80_.jpg" alt="Slide 6" />
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">Don't Blame Me</div>
+                  <div class="singer">Taylor Swift</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+            <div class="mslide">
+              <img src="https://i1.sndcdn.com/artworks-OyCIs78v7RZ2JCUM-cwiLyQ-t500x500.jpg" alt="Slide 7" />
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">Night Flower</div>
+                  <div class="singer">Ahn Ye Eun</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+            <div class="mslide">
+              <img src="https://lastfm.freetls.fastly.net/i/u/500x500/7b502419c192b3df0ac14eedc74be923.jpg"
+                alt="Slide 8" />
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">CROW</div>
+                  <div class="singer">UPIKO</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+            <div class="mslide">
+              <img src="https://i.scdn.co/image/ab67616d0000b273ac122efb1600b27d7d7f1775" alt="Slide 9" />
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">Vengeance</div>
+                  <div class="singer">BIBI</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+            <div class="mslide">
+              <img
+                src="https://a.storyblok.com/f/178900/1658x933/4818ad7c7d/the-parade-of-battlers-otoha.png/m/1200x0/filters:quality(95)format(webp)"
+                alt="Slide 10" />
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">The Parade of Battlers</div>
+                  <div class="singer">otoha</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+            <div class="mslide">
+              <img
+                src="https://us-tuna-sounds-images.voicemod.net/291fb8d6-fda6-482e-8b5c-be455f4a3679-1714310470908.jpg"
+                alt="Slide 11" />
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">Let The World Burn</div>
+                  <div class="singer">Chris Grey</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+            <div class="mslide">
+              <img src="https://i.scdn.co/image/ab67616d00001e025bdd9e580fdda5e676a25e6a" alt="Slide 12" />
+              <div class="info">
+                <div class="info-top">
+                  <div class="title">Worth It</div>
+                  <div class="singer">Fifth Harmony</div>
+                </div>
+
+                <img src="./assets/images/play.png" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <div class="parallax parallax1"></div>
 
       <section id="ANIME" class="trendinganime">
-
         <div class="cattitle">
-            <div class="head">
-              <span>Trending</span>
-              Anime
-            </div>
+          <div class="head">
+            <span>Trending</span>
+            Anime
           </div>
-
-        <div class="serie-grid-cont">
-            <div class="contgrid-1">
-                <img src="https://mrwallpaper.com/images/hd/characters-of-your-lie-in-april-al0dcb8a5xwbgwqq.jpg" >
-            </div>
-            <div class="contgrid-2">
-                <img src="https://4kwallpapers.com/images/wallpapers/demon-slayer-1920x1080-10716.jpg" >
-            </div>
-            <div class="contgrid-3">
-                <img src="https://m.media-amazon.com/images/M/MV5BODFmYTUwYzMtM2M2My00NGExLWIzMDctYmRjNTNhZDc4MGI2XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UX1000_.jpg" >
-            </div>
-            <div class="contgrid-4">
-                 <img src="https://images7.alphacoders.com/661/thumb-1920-661083.jpg" > 
-            </div>
-            <div class="contgrid-5">
-                 <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10701949_b_v8_ah.jpg" > 
-            </div>
-            <div class="contgrid-6">
-                <img src="https://c4.wallpaperflare.com/wallpaper/109/220/12/dragon-ball-dragon-ball-super-ultra-instinct-son-goku-wallpaper-preview.jpg">
-            </div>
         </div>
 
-        <a href="https://anicrush.to/"><div class="watchnow"> Watch Now </div></a>
-    </section>
+        <div class="serie-grid-cont">
+          <div class="contgrid-1">
+            <img src="https://mrwallpaper.com/images/hd/characters-of-your-lie-in-april-al0dcb8a5xwbgwqq.jpg" />
+          </div>
+          <div class="contgrid-2">
+            <img src="https://4kwallpapers.com/images/wallpapers/demon-slayer-1920x1080-10716.jpg" />
+          </div>
+          <div class="contgrid-3">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BODFmYTUwYzMtM2M2My00NGExLWIzMDctYmRjNTNhZDc4MGI2XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UX1000_.jpg" />
+          </div>
+          <div class="contgrid-4">
+            <img src="https://images7.alphacoders.com/661/thumb-1920-661083.jpg" />
+          </div>
+          <div class="contgrid-5">
+            <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10701949_b_v8_ah.jpg" />
+          </div>
+          <div class="contgrid-6">
+            <img
+              src="https://c4.wallpaperflare.com/wallpaper/109/220/12/dragon-ball-dragon-ball-super-ultra-instinct-son-goku-wallpaper-preview.jpg" />
+          </div>
+        </div>
 
+        <a target="_blank" href="https://zangetsu.vercel.app/">
+          <div class="watchnow">Watch Now</div>
+        </a>
+      </section>
 
-
-    <!-- <div class="parallax parallax2"></div> -->
+      <!-- <div class="parallax parallax2"></div> -->
 
       <!-- 
         - #CONTACT
@@ -1180,67 +869,54 @@
 
       <section id="CONTACT" class="section contact" aria-label="contact">
         <div class="container">
-
           <div class="contact-card">
-
             <div class="contact-content" data-reveal="left">
-
-              <h2 class="h2 section-title">If you have some suggestions, Feel free to contact us!</h2>
-
+              <h2 class="h2 section-title">
+                If you have some suggestions, Feel free to contact us!
+              </h2>
             </div>
 
-            <form action="POST" class="contact-form" data-reveal="right">
-
+            <form action="" class="contact-form" data-reveal="right">
               <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Name *" required class="input-field">
+                <input type="text" name="name" placeholder="Name *" required class="input-field" />
 
-                <input type="email" name="email_address" placeholder="Email *" required class="input-field">
+                <input type="email" name="email_address" placeholder="Email *" required class="input-field" />
               </div>
 
               <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
 
-              <button type="submit" class="btn btn-secondary">Send message</button>
-
+              <button type="submit" class="btn btn-secondary">
+                Send message
+              </button>
             </form>
-
           </div>
-
         </div>
       </section>
-
     </article>
   </main>
-
-
-
-
 
   <!-- 
     - #FOOTER
   -->
 
   <footer class="footer">
-
-    <div style="display: flex; justify-content: center;">
-      <iframe style="border-radius: 0.5rem;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13749.02672471774!2d76.65282199999999!3d30.513780199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1724421446979!5m2!1sen!2sin" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div style="display: flex; justify-content: center">
+      <iframe style="border-radius: 0.5rem"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13749.02672471774!2d76.65282199999999!3d30.513780199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1724421446979!5m2!1sen!2sin"
+        width="80%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-    <br>
+    <br />
 
-    <hr style="border-color: gray;">
+    <hr style="border-color: gray" />
 
-    <br>
-    
+    <br />
+
     <div class="container">
-
-      
-
-      <div class="copyright" style="color: white;">
-        © 2024 Nekron
-      </div>
+      <div class="copyright" style="color: white">© 2024 Nekron</div>
 
       <ul class="social-list">
-
         <li>
           <a href="#" class="social-link">
             <ion-icon name="logo-twitter"></ion-icon>
@@ -1270,17 +946,165 @@
             <ion-icon name="logo-youtube"></ion-icon>
           </a>
         </li>
-
       </ul>
-
     </div>
   </footer>
 
+  <<<<<<< HEAD </section>
+
+    <div class="parallax parallax1"></div>
+
+    <section id="ANIME" class="trendinganime">
+
+      <div class="cattitle">
+        <div class="head">
+          <span>Trending</span>
+          Anime
+        </div>
+      </div>
+
+      <div class="serie-grid-cont">
+        <div class="contgrid-1">
+          <img src="https://mrwallpaper.com/images/hd/characters-of-your-lie-in-april-al0dcb8a5xwbgwqq.jpg">
+        </div>
+        <div class="contgrid-2">
+          <img src="https://4kwallpapers.com/images/wallpapers/demon-slayer-1920x1080-10716.jpg">
+        </div>
+        <div class="contgrid-3">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BODFmYTUwYzMtM2M2My00NGExLWIzMDctYmRjNTNhZDc4MGI2XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UX1000_.jpg">
+        </div>
+        <div class="contgrid-4">
+          <img src="https://images7.alphacoders.com/661/thumb-1920-661083.jpg">
+        </div>
+        <div class="contgrid-5">
+          <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10701949_b_v8_ah.jpg">
+        </div>
+        <div class="contgrid-6">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/109/220/12/dragon-ball-dragon-ball-super-ultra-instinct-son-goku-wallpaper-preview.jpg">
+        </div>
+      </div>
+
+      <a href="https://anicrush.to/">
+        <div class="watchnow"> Watch Now </div>
+      </a>
+    </section>
+
+
+
+    <!-- <div class="parallax parallax2"></div> -->
+
+    <!-- 
+        - #CONTACT
+      -->
+
+    <section id="CONTACT" class="section contact" aria-label="contact">
+      <div class="container">
+
+        <div class="contact-card">
+
+          <div class="contact-content" data-reveal="left">
+
+            <h2 class="h2 section-title">If you have some suggestions, Feel free to contact us!</h2>
+
+          </div>
+
+          <form action="POST" class="contact-form" data-reveal="right">
+
+            <div class="input-wrapper">
+              <input type="text" name="name" placeholder="Name *" required class="input-field">
+
+              <input type="email" name="email_address" placeholder="Email *" required class="input-field">
+            </div>
+
+            <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+
+            <button type="submit" class="btn btn-secondary">Send message</button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    </article>
+    </main>
 
 
 
 
-  <!-- 
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+
+      <div style="display: flex; justify-content: center;">
+        <iframe style="border-radius: 0.5rem;"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13749.02672471774!2d76.65282199999999!3d30.513780199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1724421446979!5m2!1sen!2sin"
+          width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <br>
+
+      <hr style="border-color: gray;">
+
+      <br>
+
+      <div class="container">
+
+
+
+        <div class="copyright" style="color: white;">
+          © 2024 Nekron
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </footer>
+
+
+
+
+
+    <!-- 
 =======
     <!-- 
 >>>>>>> 9aa0d6e56f092c48897b8ae863c777ad2763bad2
@@ -1291,13 +1115,8 @@
     <!-- 
     - ionicon link
   -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
