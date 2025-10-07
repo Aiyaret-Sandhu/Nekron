@@ -80,4 +80,4 @@ For any questions or support, please reach out to:
 
 ---
 
-Thank you for choosing #Nekron — where every stream feels cinematic! 🎥
+Thank you for choosing #Nekron — where every stream feels cinematic ! yeah !
